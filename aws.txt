@@ -1,0 +1,5 @@
+#!/bin/bash
+pip3 install fastapi[all] uvicorn sqlalchemy psycopg2-binary pydantic typing-extensions
+yum -y install git
+git clone https://github.com/Takoi1/aws-TAF2.git
+/usr/local/bin/uvicorn <project_name>.main:app --host 0.0.0.0 --port 8000
